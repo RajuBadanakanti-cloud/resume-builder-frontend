@@ -11,7 +11,7 @@ import DownloadResumeButton from "../DownloadResumeButton"
 const ResumePreview = ({resumeData}) => {
     const personalData = resumeData.personal
     const educationData = resumeData.education
-    const techSkillsToolsData = resumeData.skills
+    const techSkillsToolsData = resumeData.skills   
 
     const experienceData = resumeData.experience
     const isHaveExperience = resumeData.experience.isExperience
@@ -25,12 +25,14 @@ const ResumePreview = ({resumeData}) => {
     return (
         <div className="w-full md:w-[50%]">
            {/* Top Preview */} 
-        <section className=" bg-rose-800 px-2 py-2 md:px-5 md:py-5 w-full flex flex-col justify-start items-center text-center rounded-md md:rounded-lg mt-10 md:mt-0">
+        <section className="bg-rose-800 px-2 py-2 md:px-5 md:py-5 w-full flex flex-col justify-start items-center text-center rounded-md md:rounded-lg mt-10 md:mt-0">
             <h1 className="text-white text-base md:text-2xl font-bold">Resume Preview</h1>
             <p className="text-rose-100 text-xs md:text-base">Review your resume below before downloading</p>
         </section>
 
-        <div id="resume-preview" className="pdf-safe page-break print:break-after-page w-[198.5] h-[280.75] rounded-md bg-white p-8 mt-4 md:mt-10 mb-5">
+
+        <div id="resume-preview" 
+        className="pdf-safe page-break print:break-after-page rounded-md bg-white p-6 md:p-10 mt-4 md:mt-10 mb-5">
         
             <PersonalPreview personalData={personalData}/>
             <hr className="w-full text-black mt-4 mb-2"/>

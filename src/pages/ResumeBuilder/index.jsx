@@ -73,13 +73,13 @@ const ResumeBuilder = () => {
     return (
         <>
         <Header/>
-        <div className="min-h-screen w-screen bg-emerald-100 py-14 md:py-20 flex flex-col justify-start items-center">
+        <div className="min-h-screen w-full bg-emerald-100 px-5 py-14 md:py-20 flex flex-col justify-center items-center">
      
         {/* Tearms and conditions  */}
         {showPopup && <TearmsAndConditionsPopup handleAgree={handleAgree}/>}
 
             {/* Content */}
-            <div className="w-full md:w-[95%] flex flex-col md:flex-row justify-center md:justify-center items-start mx-5 md:my-10 oveflow-hidden">
+            <div className="w-[95%] flex flex-col md:flex-row justify-center md:justify-center items-center md:items-start mx-5 md:my-10">
             <BuilderForm resumeData={resumeData} setResumeData={setResumeData}/>
             <ResumePreview resumeData={resumeData}/>
             </div>

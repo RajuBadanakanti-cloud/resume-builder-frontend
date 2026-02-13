@@ -41,6 +41,9 @@ const Login  = () => {
  
             const URL = import.meta.env.VITE_API_URL
 
+            const URLS = "http://localhost:5000"
+            console.log("API URL:", import.meta.env.VITE_API_URL);
+
             const response = await fetch(`${URL}/auth/login`, options)
             const data = await response.json()
             // console.log(data.token, data.user)
@@ -75,7 +78,7 @@ const Login  = () => {
 
             {/* Password Section  */}    
             <section className="w-full flex flex-col justify-center items-start mb-4 md:mb-5">
-            <label htmlFor="passswordInp" className="text-emerald-900 font-bold text-[12px] md:text-base mb-2">Password</label>
+            <label htmlFor="passwordInp" className="text-emerald-900 font-bold text-[12px] md:text-base mb-2">Password</label>
             
             <input id="passwordInp" type="password" value={userPassword} onChange={onhandlePassword} 
             className="h-10 md:h-12 w-full bg-emerald-100 rounded-lg p-2 text-emerald-900 text-[12px] md:text-base 

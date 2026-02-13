@@ -75,7 +75,7 @@ const Register  = () => {
 
             {/* Password Section  */}    
             <section className="w-full flex flex-col justify-center items-start mb-4 md:mb-5">
-            <label htmlFor="passswordInp" className="text-emerald-900 font-bold text-[12px] md:text-base mb-2">Password</label>
+            <label htmlFor="passwordInp" className="text-emerald-900 font-bold text-[12px] md:text-base mb-2">Password</label>
             <input id="passwordInp" type="password" minLength={6} placeholder="Must be 6 characters" value={password} onChange={(event) => setPassword(event.target.value)}
             className="h-10 md:h-12 w-full bg-emerald-100 rounded-lg p-3 text-emerald-900 text-[12px] md:text-base 
             hover:border-2 border-emerald-500 transition-all duration-400"/>
